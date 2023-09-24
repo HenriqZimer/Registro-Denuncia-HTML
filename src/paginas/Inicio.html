@@ -20,81 +20,106 @@
         <div class="subtitle">Delegacia Virtual</div>
       </div>
     </header>
-
+    <div class="title-page">Registro de ocorrências</div>
     <main>
-      <div class="title-page">Registro de ocorrencias</div>
 
-      <section id="steps">
-        <div>
-          <h1>Etapas de Registro</h1>
-          <div><span> 1-Fato Ocorrido</span></div>
-          <span class="mdi mdi-chevron-right"></span>
-          <div><span>2 - Dados Pessoais</span></div>
-          <span class="mdi mdi-chevron-right"></span>
-          <div><span>3 - Dados do Fato</span></div>
-          <span class="mdi mdi-chevron-right"></span>
-          <div><span>4 - Opcional</span></div>
-          <span class="mdi mdi-chevron-right"></span>
-          <div><span>5 - Finalização</span></div>
-        </div>
-      </section>
+      <div class="container">
+        <section id="steps">
+          <h1 style="font-size: 14px;">Etapas de Registro</h1>
+          <div style="border-radius: 8px;">
+            <div class="stepActive">
+              <span>1 - Fato Ocorrido</span>
+            </div>
+            <div class="step">
+              <span>2 - Dados Pessoais</span>
+            </div>
+            <div class="step">
+              <span>3 - Dados do Fato</span>
+            </div>
+            <div class="step">
+              <span>4 - Opcional</span>
+            </div>
+            <div class="step">
+              <span>5 - Finalização</span>
+            </div>
+          </div>
+        </section>
 
-      <!-- <section id="options">
-        <div style="border: #606469 2px solid;">
-          <span>Fato Ocorrido</span>
-          <h4>Selecione um fato ocorrido *</h4>
-          <form id="formOptions">
-            <label class="option">
-              <input
-                type="radio"
-                name="opcao"
-                value="ACIDENTE DE TRÂNSITO SEM VÍTIMA"
-              />
-              ACIDENTE DE TRÂNSITO SEM VÍTIMA
-            </label>
+        <section id="options">
+          <h1>Fato Ocorrido</h1>
+          <form id="optionsForm">
+            <h4>Selecione um fato ocorrido *</h4>
 
-            <label class="option">
-              <input type="radio" name="opcao" value="FURTO E ROUBO" /> FURTO E
-              ROUBO
-            </label>
+            <button
+              type="submit"
+              name="opcao"
+              value="ACIDENTE DE TRÂNSITO "
+            >
+              <label>
+                <span class="mdi mdi-car"></span>
+                Acidente de Trânsito 
+              </label>
+            </button>
+            <button
+              type="submit"
+              name="opcao"
+              value="FURTO E ROUBO"
+            >
+              <label>
+                <span class="mdi mdi-car"></span>
+                Furto e Roubo
+              </label>
+            </button>
 
-            <label class="option">
-              <input
-                type="radio"
-                name="opcao"
-                value="MAUS-TRATOS CONTRA ANIMAIS"
-              />
-              MAUS-TRATOS CONTRA ANIMAIS
-            </label>
+            <button type="submit"
+            name="opcao"
+            value="MAUS-TRATOS CONTRA ANIMAIS">
+              <label>
+                
+                <span class="mdi mdi-dog"></span>
+                Maus-Tratos contra Animais
+              </label>
+            </button>
 
-            <label class="option">
-              <input
-                type="radio"
-                name="opcao"
-                value="ABUSO"
-              />
-              ABUSO
-            </label>
-
-            <input type="submit" value="Próximo Passo" class="saveBtn" />
+            <button type="submit" name="opcao" value="ABUSO" />
+              <label>
+                <span class="mdi mdi-car"></span>
+                Abuso
+              </label>
+            </button>
           </form>
-        </div>
-      </section> -->
-
-      <section id="personalData">
-        <div style="border: #606469 2px solid">
+          <div style="margin-top: 50px;">
+            <a class="saveBtn" href="./DadosPessoais.html">Próximo Passo</a>
+          </div>
+        </section>
+      </div>
+      <section id="result">
+        <h2>Opção escolhida:</h2>
+        <p id="chosenOption"></p>
+    </section>
+    
+      
+      <!-- <section id="personalData">
+        <div
+          style="
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 70px;
+          "
+        >
           <span>Dados Pessoais</span>
           <form id="personalDataForm">
-            <div>
+            <div class="firstColumn">
               <div>
-                <label for="name">Nome Completo</label>
+                <label for="name">Nome</label>
                 <input type="text" name="name" id="name" />
               </div>
-              <div></div>
               <div>
                 <label for="cpf">CPF</label>
                 <input type="text" name="cpf" id="cpf" />
               </div>
+
               <div>
                 <label for="rg">RG</label>
                 <input type="text" name="rg" id="rg" />
@@ -103,12 +128,14 @@
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" />
               </div>
+
               <div>
                 <label for="telefone">Telefone</label>
                 <input type="text" name="telefone" id="telefone" />
               </div>
             </div>
-            <div>
+
+            <div class="secondColumn">
               <div>
                 <label for="endereco">Endereço</label>
                 <input type="text" name="endereco" id="endereco" />
@@ -117,40 +144,46 @@
                 <label for="numero">Número</label>
                 <input type="text" name="numero" id="numero" />
               </div>
+
               <div>
                 <label for="bairro">Bairro</label>
                 <input type="text" name="bairro" id="bairro" />
               </div>
+
               <div>
                 <label for="cidade">Cidade</label>
                 <input type="text" name="cidade" id="cidade" />
               </div>
+
               <div>
                 <label for="estado">Estado</label>
                 <input type="text" name="estado" id="estado" />
               </div>
             </div>
           </form>
+          <div style="display: flex; justify-content: center">
+            <input type="submit" value="Próximo Passo" class="saveBtn" />
+          </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="hidden">
-        <div class="caseFacts">
-          <h2>Dados do Fato</h2>
-          <form>
-            <div class="data">
+      <!-- <section id="caseFacts">
+        <div style="border: #000 2px solid">
+          <span>Dados do Fato</span>
+          <form id="caseFactsforms">
+            <div>
               <label for="data">Data do Fato</label>
               <input type="date" name="data" id="data" />
             </div>
-            <div class="hora">
+            <div>
               <label for="hora">Hora do Fato</label>
               <input type="time" name="hora" id="hora" />
             </div>
-            <div class="local">
+            <div>
               <label for="local">Local</label>
               <input type="text" name="local" id="local" />
             </div>
-            <div class="descricao">
+            <div>
               <label for="descricao">Descrição</label>
               <textarea
                 name="descricao"
@@ -159,11 +192,14 @@
                 rows="10"
               ></textarea>
             </div>
-          </form>
-        </div>
-      </section>
+          </form> -->
+      <!-- <div style="display: flex; justify-content: center">
+        <input type="submit" value="Próximo Passo" class="saveBtn" />
+      </div> -->
+      <!-- </div> -->
+      <!-- </section>
       <div id="resultado"></div>
-      <div id="dadosImpressos"></div>
+      <div id="dadosImpressos"></div> -->
       <!-- <button onclick="exibirpersonalDataFormulario()">Exibir Dados</button> -->
     </main>
 

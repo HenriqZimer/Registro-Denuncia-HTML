@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descrição do seu site" />
+    <title>Denuncias</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <div class="header">
+        <div class="title">Polícia Civil</div>
+        <div class="subtitle">Delegacia Virtual</div>
+      </div>
+    </header>
+    <div class="title-page">Registro de ocorrências</div>
+    <main>
+      <div class="container">
+        <section id="steps">
+          <h1 style="font-size: 14px">Etapas de Registro</h1>
+          <div style="border-radius: 8px">
+            <div class="step">
+              <span>1 - Fato Ocorrido</span>
+            </div>
+            <div class="step">
+              <span>2 - Dados Pessoais</span>
+            </div>
+            <div class="stepActive">
+              <span>3 - Dados do Fato</span>
+            </div>
+            <div class="step">
+              <span>4 - Opcional</span>
+            </div>
+            <div class="step">
+              <span>5 - Finalização</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="caseFacts">
+          <h1>Dados do Fato</h1>
+          <div>
+            <form id="caseFactsforms">
+              <div style="padding: 10px">
+                <label for="data">Data do Fato</label>
+                <input type="date" name="data" id="data" />
+              </div>
+              <div style="padding: 10px">
+                <label for="hora">Hora do Fato</label>
+                <input type="time" name="hora" id="hora" />
+              </div>
+              <div style="padding: 10px">
+                <label for="local" style="margin-right: 87px">Local</label>
+                <input type="text" name="local" id="local" />
+              </div>
+              <div style="padding: 10px">
+                <label for="descricao">Descrição</label>
+                <textarea
+                  name="descricao"
+                  id="descricao"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </form>
+
+            <div style="margin-top: 50px">
+              <a class="saveBtn" href="./DadosPessoais.html">Próximo Passo</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- <section id="result">
+        <h2>Opção escolhida:</h2>
+        <p id="chosenOption"></p>
+      </section> -->
+    </main>
+
+    <footer>
+      <div class="left">
+        <ul>
+          <li>DENUNCIE</li>
+          <li>197 - Polícia Civil</li>
+          <li>181 - Disque Denúncia</li>
+          <li
+            style="
+              border: #fff 1px solid;
+              padding: 8px;
+              margin-top: 20px;
+              border-radius: 4px;
+            "
+          >
+            Lista de Delegacias
+          </li>
+        </ul>
+      </div>
+      <div class="center">
+        <ul>
+          <li>Polícia Civil</li>
+          <li>Delegacia de Polícia Virtual de Santa Catarina</li>
+          <li>Todos os direitos Reservados © 2020-2023</li>
+          <li style="color: #606469">Versão 1.3.4</li>
+          <li style="margin-top: 20px; font-size: 12px">
+            CIASC - Centro de Informática e Automação de Santa Catarina
+          </li>
+        </ul>
+      </div>
+      <div class="right">DÚVIDAS DP VIRTUAL</div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>

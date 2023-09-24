@@ -25,14 +25,12 @@ header {
 .subtitle {
   font-size: 18px;
 }
-.title-page {
-  display: flex;
-}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #b2b2b2;
 }
 
 main {
@@ -42,25 +40,6 @@ h1 {
   text-align: center;
   margin-top: 20px;
 }
-
-/* ul {
-  
-  padding: 0;
-}
-.option {
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px;
-  text-align: center;
-}
-
-li {
-  background-color: #fff;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-} */
 
 a {
   text-decoration: none;
@@ -102,131 +81,277 @@ footer {
   text-decoration: none;
   list-style: none;
 }
+
 main {
-  background-color: #f3f4f5;
-}
-section {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-right: 200px;
+  padding-left: 200px;
 }
 
-/* Componente de Selecao de Passos */
-#steps {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: #000 2px solid;
-}
-
-#steps span {
-  padding: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#steps div {
-  border: 2px solid #000;
-  margin: 0px 14px 0px 14px;
-  padding: 14px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-/* Componente de Selecao de Opcoes */
-#options {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-}
-
-#options div {
-  padding: 150px;
-}
-
-#options span {
-  font-size: 45px;
-}
-
-#options label {
-  font-size: 25px;
-}
-
-#options input[type="radio"] {
-  transform: scale(1.5);
-  margin-right: 10px;
-}
-
-#options .saveBtn {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 30px;
-  border-radius: 5px;
-  margin-top: 70px;
-  font-size: 25px;
-  text-transform: uppercase;
+body {
+  background-color: #f8f9fa;
 }
 
 .title-page {
+  font-size: 50px;
+  text-transform: uppercase;
   padding: 30px;
   display: flex;
   justify-content: center;
   color: #000000;
-  text-transform: uppercase;
   font-weight: bolder;
   font-size: 30px;
 }
-form {
+
+.saveBtn {
+  margin-top: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 50px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 100px;
+}
+
+.container h1 {
+  font-size: 20px;
+}
+
+#steps {
+  width: 15%;
+}
+
+#steps div {
   display: flex;
   flex-direction: column;
 }
-.number {
-  background-color: #000000;
-  padding: 10px;
-  border-radius: 100px;
+
+#steps span {
+  font-size: 15px;
 }
-#personalData div {
-  padding: 10px;
+
+#steps .stepActive {
+  padding: 15px 15px 15px 15px;
+  border: #000 1px solid;
+  border-radius: 3px;
+  background-color: #ececec;
 }
-#personalData span {
-  text-align: 45px;
+
+#steps .step {
+  border-radius: 3px;
+  padding: 15px 15px 15px 15px;
+  border: #b1b1b1 1px solid;
+  color: #b1b1b1;
+  background-color: #ffffff;
 }
-#personalData label {
-  padding: 20px;
-  font-size: 25px;
-}
-#personalData input {
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-top: 15px;
-  padding-top: 15px;
-  font-size: 30px;
+
+#options {
+  width: 40%;
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  color: #000;
 }
+
+#options form {
+  width: 90%;
+  text-align: left;
+  border-radius: 8px;
+  border: #727171 2px solid;
+  padding: 25px;
+  background-color: #ffffff;
+}
+
+#options button {
+  cursor: pointer;
+  border: none;
+  background-color: #d8dadb;
+  color: #000000;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 0px 20px 0px 0px;
+  font-weight: bolder;
+}
+
+#options button:hover {
+  background-color: #eeeeee;
+}
+
+#options label {
+  display: flex;
+  align-items: center;
+}
+
+#options .mdi {
+  margin: 20px 35px 20px 20px;
+}
+
+#options .saveBtn:hover {
+  background-color: #424242;
+}
+
+#personalData {
+  width: 60%;
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#personalData span {
+  font-size: 45px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+#personalData label {
+  font-size: 20px;
+  text-align: left;
+}
+#personalData form {
+  text-align: left;
+  border-radius: 8px;
+  border: #727171 2px solid;
+}
+
+#personalData input {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  color: #000;
+  display: flex;
+  align-items: end;
+  border-radius: 6px;
+  background-color: #d8dadb77;
+}
+
 #personalDataForm {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* divide o container em duas colunas de tamanho igual */
-  gap: 20px; /* adiciona um espaço entre as colunas */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#personalDataForm label {
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+#personalDataForm .firstColumn {
+  display: flex;
+
+  flex-direction: column;
+  align-items: start;
+  padding: 20px 0px 20px 20px;
+}
+
+#personalDataForm .secondColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px 10px 20px 0px;
 }
 
 #personalDataForm div {
-  width: 48%;
+  padding: 10px;
 }
-.caseFacts {
-  border: #000 2px solid;
-  padding: 30px;
+
+#caseFacts {
+  width: 50%;
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.option {
+
+#caseFacts form {
+  width: 90%;
+  text-align: left;
+  border-radius: 8px;
+  border: #727171 2px solid;
+  padding: 25px;
+  background-color: #ffffff;
+}
+
+#caseFacts label {
+  font-size: 215px;
+  text-align: left;
+  font-size: 25px;
+}
+
+#caseFacts input,
+textarea {
+  width: 85%;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #000;
+  background-color: #d8dadb;
+}
+
+#caseFacts label {
+  padding: 20px;
+}
+
+#caseFacts input[type="text"],
+#caseFacts input[type="date"],
+#caseFacts input[type="time"] {
+  width: 90%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+#caseFacts textarea {
+  width: 90%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+#caseFacts textarea {
+  width: 90%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* .option {
   padding: 10px;
   border-radius: 5px;
   margin: 10px;
   font-size: 20px;
-}
+} */
 
-.hidden {
-  display: none;
-}
+/* form {
+  display: flex;
+  flex-direction: column;
+} */
+/* .number {
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 100px;
+} */
