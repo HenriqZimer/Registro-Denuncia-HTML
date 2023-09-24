@@ -1,0 +1,232 @@
+header {
+  display: flex;
+  padding: 15px 360px 15px 360px;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.logo {
+  background-image: url("../assets/logo-superior.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 35px;
+}
+
+.header {
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 6px;
+  font-size: 40px;
+}
+
+.subtitle {
+  font-size: 18px;
+}
+.title-page {
+  display: flex;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+main {
+  height: auto;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ul {
+  
+  padding: 0;
+}
+.option {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+li {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+} */
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 360px 15px 360px;
+  background-color: #343a40;
+  color: #fff;
+  height: 210px;
+  font-size: 14px;
+}
+
+.left li {
+  padding: 6px;
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+}
+
+.center {
+  margin-top: 40px;
+}
+
+.center li {
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.right {
+  margin-top: 20px;
+  padding: 4px;
+  text-align: right;
+  text-decoration: none;
+  list-style: none;
+}
+main {
+  background-color: #f3f4f5;
+}
+section {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Componente de Selecao de Passos */
+#steps {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #000 2px solid;
+}
+
+#steps span {
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#steps div {
+  border: 2px solid #000;
+  margin: 0px 14px 0px 14px;
+  padding: 14px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Componente de Selecao de Opcoes */
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+#options div {
+  padding: 150px;
+}
+
+#options span {
+  font-size: 45px;
+}
+
+#options label {
+  font-size: 25px;
+}
+
+#options input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+
+#options .saveBtn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 70px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.title-page {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.number {
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 100px;
+}
+#personalData div {
+  padding: 10px;
+}
+#personalData span {
+  text-align: 45px;
+}
+#personalData label {
+  padding: 20px;
+  font-size: 25px;
+}
+#personalData input {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 15px;
+  padding-top: 15px;
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+}
+#personalDataForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* divide o container em duas colunas de tamanho igual */
+  gap: 20px; /* adiciona um espaço entre as colunas */
+}
+
+#personalDataForm div {
+  width: 48%;
+}
+.caseFacts {
+  border: #000 2px solid;
+  padding: 30px;
+}
+.option {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
