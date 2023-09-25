@@ -30,13 +30,13 @@
               <span>1 - Fato Ocorrido</span>
             </div>
             <div class="step">
+              <span>2 - Dados Pessoais</span>
+            </div>
+            <div class="step">
+              <span>3 - Dados do Fato</span>
+            </div>
+            <div class="step">
               <span>2 - Diferencial</span>
-            </div>
-            <div class="step">
-              <span>3 - Dados Pessoais</span>
-            </div>
-            <div class="step">
-              <span>4 - Dados do Fato</span>
             </div>
             <div class="step">
               <span>5 - Finalização</span>
@@ -49,60 +49,44 @@
           <form id="optionsForm">
             <h4>Selecione um fato ocorrido *</h4>
 
-            <div class="radio-option" data-for="accident">
-              <input
-                type="radio"
-                id="accident"
-                name="opcao"
-                value="ACIDENTE DE TRÂNSITO"
-              />
-              <label for="accident">
+            <button type="submit" name="opcao" value="ACIDENTE DE TRÂNSITO ">
+              <label>
                 <span class="mdi mdi-car"></span>
                 Acidente de Trânsito
               </label>
-            </div>
-
-            <div class="radio-option" data-for="theft">
-              <input
-                type="radio"
-                id="theft"
-                name="opcao"
-                value="FURTO E ROUBO"
-              />
-              <label for="theft">
+            </button>
+            <button type="submit" name="opcao" value="FURTO E ROUBO">
+              <label>
                 <span class="mdi mdi-car"></span>
                 Furto e Roubo
               </label>
-            </div>
+            </button>
 
-            <div class="radio-option" data-for="animalAbuse">
-              <input
-                type="radio"
-                id="animalAbuse"
-                name="opcao"
-                value="MAUS-TRATOS CONTRA ANIMAIS"
-              />
-              <label for="animalAbuse">
+            <button
+              type="submit"
+              name="opcao"
+              value="MAUS-TRATOS CONTRA ANIMAIS"
+            >
+              <label>
                 <span class="mdi mdi-dog"></span>
                 Maus-Tratos contra Animais
               </label>
-            </div>
+            </button>
 
-            <div class="radio-option" data-for="abuse">
-              <input type="radio" id="abuse" name="opcao" value="ABUSO" />
-              <label for="abuse">
+            <button type="submit" name="opcao" value="ABUSO">
+              <label>
                 <span class="mdi mdi-car"></span>
                 Abuso
               </label>
-            </div>
+            </button>
           </form>
-
           <div style="margin-top: 50px">
-            <a class="saveBtn">Próximo </a>
+            <a class="saveBtn" href="./Inicio.html">Próximo Passo</a>
           </div>
         </section>
       </div>
     </main>
+
     <footer>
       <div class="left">
         <ul>

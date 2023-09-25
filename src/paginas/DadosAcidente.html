@@ -26,17 +26,17 @@
         <section id="steps">
           <h1 style="font-size: 14px">Etapas de Registro</h1>
           <div style="border-radius: 8px">
-            <div class="stepActive">
+            <div class="step">
               <span>1 - Fato Ocorrido</span>
+            </div>
+            <div class="stepActive">
+              <span>3 - Dados do Acidente</span>
+            </div>
+            <div class="step">
+              <span>3 - Dados do Fato</span>
             </div>
             <div class="step">
               <span>2 - Diferencial</span>
-            </div>
-            <div class="step">
-              <span>3 - Dados Pessoais</span>
-            </div>
-            <div class="step">
-              <span>4 - Dados do Fato</span>
             </div>
             <div class="step">
               <span>5 - Finalização</span>
@@ -44,65 +44,59 @@
           </div>
         </section>
 
-        <section id="options">
-          <h1>Fato Ocorrido</h1>
-          <form id="optionsForm">
-            <h4>Selecione um fato ocorrido *</h4>
+        <section id="carAccidentData">
+          <h1>Detalhes do Acidente de Carro</h1>
+          <div>
+            <form id="carAccidentForm">
+              <div style="padding: 10px">
+                <label for="accidentDate">Data do Acidente</label>
+                <input type="date" name="accidentDate" id="accidentDate" />
+              </div>
+              <div style="padding: 10px">
+                <label for="accidentTime">Hora do Acidente</label>
+                <input type="time" name="accidentTime" id="accidentTime" />
+              </div>
+              <div style="padding: 10px">
+                <label for="accidentLocation">Local do Acidente</label>
+                <input
+                  type="text"
+                  name="accidentLocation"
+                  id="accidentLocation"
+                />
+              </div>
+              <div style="padding: 10px">
+                <label for="vehiclesInvolved">Veículos Envolvidos</label>
+                <textarea
+                  name="vehiclesInvolved"
+                  id="vehiclesInvolved"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+              <div style="padding: 10px">
+                <label for="accidentDescription">Descrição do Acidente</label>
+                <textarea
+                  name="accidentDescription"
+                  id="accidentDescription"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </form>
 
-            <div class="radio-option" data-for="accident">
-              <input
-                type="radio"
-                id="accident"
-                name="opcao"
-                value="ACIDENTE DE TRÂNSITO"
-              />
-              <label for="accident">
-                <span class="mdi mdi-car"></span>
-                Acidente de Trânsito
-              </label>
+            <div style="margin-top: 50px">
+              <a class="saveBtn" href="./Inicio.html">Voltar</a>
+              <a
+                class="saveBtn saveAndProceedAccident"
+                href="./DadosPessoais.html"
+                >Próximo</a
+              >
             </div>
-
-            <div class="radio-option" data-for="theft">
-              <input
-                type="radio"
-                id="theft"
-                name="opcao"
-                value="FURTO E ROUBO"
-              />
-              <label for="theft">
-                <span class="mdi mdi-car"></span>
-                Furto e Roubo
-              </label>
-            </div>
-
-            <div class="radio-option" data-for="animalAbuse">
-              <input
-                type="radio"
-                id="animalAbuse"
-                name="opcao"
-                value="MAUS-TRATOS CONTRA ANIMAIS"
-              />
-              <label for="animalAbuse">
-                <span class="mdi mdi-dog"></span>
-                Maus-Tratos contra Animais
-              </label>
-            </div>
-
-            <div class="radio-option" data-for="abuse">
-              <input type="radio" id="abuse" name="opcao" value="ABUSO" />
-              <label for="abuse">
-                <span class="mdi mdi-car"></span>
-                Abuso
-              </label>
-            </div>
-          </form>
-
-          <div style="margin-top: 50px">
-            <a class="saveBtn">Próximo </a>
           </div>
         </section>
       </div>
     </main>
+
     <footer>
       <div class="left">
         <ul>

@@ -111,6 +111,7 @@ body {
   margin-top: 50px;
   font-size: 16px;
   text-transform: uppercase;
+  margin: 30px;
 }
 
 span {
@@ -168,6 +169,8 @@ span {
 }
 
 #options form {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   text-align: left;
   border-radius: 8px;
@@ -176,7 +179,7 @@ span {
   background-color: #ffffff;
 }
 
-#options button {
+#options .radio-option {
   cursor: pointer;
   border: none;
   background-color: #d8dadb;
@@ -188,9 +191,16 @@ span {
   font-size: 20px;
   padding: 0px 20px 0px 0px;
   font-weight: bolder;
+  border: #000000 1px solid;
+  display: flex;
+  align-items: center;
 }
 
-#options button:hover {
+#options .radio-option input[type="radio"] {
+  margin-left: 20px;
+}
+
+#options input:hover {
   background-color: #eeeeee;
 }
 
@@ -339,19 +349,6 @@ textarea {
   border-radius: 4px;
 }
 
-/* .option {
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px;
-  font-size: 20px;
-} */
+/* Oculta o botão de rádio padrão */
 
-/* form {
-  display: flex;
-  flex-direction: column;
-} */
-/* .number {
-  background-color: #000000;
-  padding: 10px;
-  border-radius: 100px;
-} */
+

@@ -26,17 +26,17 @@
         <section id="steps">
           <h1 style="font-size: 14px">Etapas de Registro</h1>
           <div style="border-radius: 8px">
-            <div class="stepActive">
+            <div class="step">
               <span>1 - Fato Ocorrido</span>
             </div>
-            <div class="step">
-              <span>2 - Diferencial</span>
+            <div class="stepActive">
+              <span>2 - Dados do Roubo/Furto</span>
             </div>
             <div class="step">
-              <span>3 - Dados Pessoais</span>
+              <span>2 - Dados Pessoais</span>
             </div>
             <div class="step">
-              <span>4 - Dados do Fato</span>
+              <span>3 - Dados do Fato</span>
             </div>
             <div class="step">
               <span>5 - Finalização</span>
@@ -44,65 +44,53 @@
           </div>
         </section>
 
-        <section id="options">
-          <h1>Fato Ocorrido</h1>
-          <form id="optionsForm">
-            <h4>Selecione um fato ocorrido *</h4>
+        <section id="theftData">
+          <h1>Detalhes do Roubo/Furto</h1>
+          <div>
+            <form id="theftForm">
+              <div style="padding: 10px">
+                <label for="theftDate">Data do Incidente</label>
+                <input type="date" name="theftDate" id="theftDate" />
+              </div>
+              <div style="padding: 10px">
+                <label for="theftTime">Hora do Incidente</label>
+                <input type="time" name="theftTime" id="theftTime" />
+              </div>
+              <div style="padding: 10px">
+                <label for="theftLocation">Local do Incidente</label>
+                <input type="text" name="theftLocation" id="theftLocation" />
+              </div>
+              <div style="padding: 10px">
+                <label for="itemsStolen">Itens Roubados/Furtados</label>
+                <textarea
+                  name="itemsStolen"
+                  id="itemsStolen"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+              <div style="padding: 10px">
+                <label for="theftDescription">Descrição do Incidente</label>
+                <textarea
+                  name="theftDescription"
+                  id="theftDescription"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </form>
 
-            <div class="radio-option" data-for="accident">
-              <input
-                type="radio"
-                id="accident"
-                name="opcao"
-                value="ACIDENTE DE TRÂNSITO"
-              />
-              <label for="accident">
-                <span class="mdi mdi-car"></span>
-                Acidente de Trânsito
-              </label>
+            <div style="margin-top: 50px">
+              <a class="saveBtn" href="./Inicio.html">Voltar</a>
+              <a class="saveBtn saveAndProceedTheft" href="./DadosPessoais.html"
+                >Próximo</a
+              >
             </div>
-
-            <div class="radio-option" data-for="theft">
-              <input
-                type="radio"
-                id="theft"
-                name="opcao"
-                value="FURTO E ROUBO"
-              />
-              <label for="theft">
-                <span class="mdi mdi-car"></span>
-                Furto e Roubo
-              </label>
-            </div>
-
-            <div class="radio-option" data-for="animalAbuse">
-              <input
-                type="radio"
-                id="animalAbuse"
-                name="opcao"
-                value="MAUS-TRATOS CONTRA ANIMAIS"
-              />
-              <label for="animalAbuse">
-                <span class="mdi mdi-dog"></span>
-                Maus-Tratos contra Animais
-              </label>
-            </div>
-
-            <div class="radio-option" data-for="abuse">
-              <input type="radio" id="abuse" name="opcao" value="ABUSO" />
-              <label for="abuse">
-                <span class="mdi mdi-car"></span>
-                Abuso
-              </label>
-            </div>
-          </form>
-
-          <div style="margin-top: 50px">
-            <a class="saveBtn">Próximo </a>
           </div>
         </section>
       </div>
     </main>
+
     <footer>
       <div class="left">
         <ul>
