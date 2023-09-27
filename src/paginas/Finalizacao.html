@@ -36,7 +36,7 @@
               <span>3 - Dados Pessoais</span>
             </div>
             <div class="step">
-              <span>4 - Dados do Fato</span>
+              <span>4 - Relato de Terceiros</span>
             </div>
             <div class="stepActive">
               <span>5 - Finalização</span>
@@ -44,59 +44,12 @@
           </div>
         </section>
 
-        <div id="options" class="main-component">
-          <h1>Fato Ocorrido</h1>
-          <form id="optionsForm">
-            <h4>Selecione um fato ocorrido *</h4>
-
-            <div class="radio-option" data-for="accident">
-              <input
-                type="radio"
-                id="accident"
-                name="opcao"
-                value="Acidente de Trânsito"
-              />
-              <label for="accident">
-                <span class="mdi mdi-car"></span>
-                Acidente de Trânsito
-              </label>
-            </div>
-
-            <div class="radio-option" data-for="theft">
-              <input
-                type="radio"
-                id="theft"
-                name="opcao"
-                value="Furto e Roubo"
-              />
-              <label for="theft">
-                <span class="mdi mdi-pistol"></span>
-                Furto e Roubo
-              </label>
-            </div>
-
-            <div class="radio-option" data-for="animalAbuse">
-              <input
-                type="radio"
-                id="animalAbuse"
-                name="opcao"
-                value="Maus-Tratos contra Animais"
-              />
-              <label for="animalAbuse">
-                <span class="mdi mdi-dog"></span>
-                Maus-Tratos contra Animais
-              </label>
-            </div>
-
-            <div class="radio-option" data-for="abuse">
-              <input type="radio" id="abuse" name="opcao" value="Abuso" />
-              <label for="abuse">
-                <span class="mdi mdi-hand"></span>
-                Abuso
-              </label>
-            </div>
-          </form>
-        </div>
+        <section id="options" class="main-component">
+          <section id="user-input-data">
+            <h2>Dados Enviados pelo Usuário</h2>
+            <div id="consolidatedDataDisplay"></div>
+          </section>
+        </section>
       </div>
     </main>
 
