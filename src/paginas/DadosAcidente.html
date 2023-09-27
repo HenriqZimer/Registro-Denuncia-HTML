@@ -15,13 +15,13 @@
   <body>
     <header>
       <div class="logo"></div>
-      <div class="header">
+      <div style="margin: 0 0 20px 15px">
         <div class="title">Polícia Civil</div>
-        <div class="subtitle">Delegacia Virtual</div>
+        <div>Delegacia Virtual</div>
       </div>
     </header>
     <div class="title-page">Registro de ocorrências</div>
-    <main>
+    <main style="height: auto; padding: 0 200px 0 200px">
       <div class="container">
         <section id="steps">
           <h1 style="font-size: 14px">Etapas de Registro</h1>
@@ -30,13 +30,13 @@
               <span>1 - Fato Ocorrido</span>
             </div>
             <div class="stepActive">
-              <span>3 - Dados do Acidente</span>
+              <span>2 - Acidente de Carro</span>
             </div>
             <div class="step">
-              <span>3 - Dados do Fato</span>
+              <span>3 - Dados Pessoais</span>
             </div>
             <div class="step">
-              <span>2 - Diferencial</span>
+              <span>4 - Dados do Fato</span>
             </div>
             <div class="step">
               <span>5 - Finalização</span>
@@ -44,7 +44,7 @@
           </div>
         </section>
 
-        <section id="carAccidentData">
+        <section id="carAccidentData" class="main-component" style="font-size: 16px;">
           <h1>Detalhes do Acidente de Carro</h1>
           <div>
             <form id="carAccidentForm">
@@ -84,7 +84,7 @@
               </div>
             </form>
 
-            <div style="margin-top: 50px">
+            <div style="margin-top: 50px; display: flex">
               <a class="saveBtn" href="./Inicio.html">Voltar</a>
               <a
                 class="saveBtn saveAndProceedAccident"
@@ -98,35 +98,28 @@
     </main>
 
     <footer>
-      <div class="left">
+      <div class="footerColumn">
         <ul>
           <li>DENUNCIE</li>
           <li>197 - Polícia Civil</li>
           <li>181 - Disque Denúncia</li>
-          <li
-            style="
-              border: #fff 1px solid;
-              padding: 8px;
-              margin-top: 20px;
-              border-radius: 4px;
-            "
-          >
-            Lista de Delegacias
-          </li>
+          <li>Lista de Delegacias</li>
         </ul>
       </div>
-      <div class="center">
+      <div class="footerColumn">
         <ul>
           <li>Polícia Civil</li>
           <li>Delegacia de Polícia Virtual de Santa Catarina</li>
           <li>Todos os direitos Reservados © 2020-2023</li>
           <li style="color: #606469">Versão 1.3.4</li>
-          <li style="margin-top: 20px; font-size: 12px">
-            CIASC - Centro de Informática e Automação de Santa Catarina
-          </li>
+          <li>CIASC - Centro de Informática e Automação de Santa Catarina</li>
         </ul>
       </div>
-      <div class="right">DÚVIDAS DP VIRTUAL</div>
+      <div class="footerColumn">
+        <ul>
+          <li>DÚVIDAS DP VIRTUAL</li>
+        </ul>
+      </div>
     </footer>
   </body>
   <script src="./script.js"></script>

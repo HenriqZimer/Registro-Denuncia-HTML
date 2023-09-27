@@ -12,38 +12,16 @@ header {
   padding: 35px;
 }
 
-.header {
-  margin-left: 15px;
-  margin-bottom: 20px;
-}
-
 .title {
   margin-bottom: 6px;
   font-size: 40px;
-}
-
-.subtitle {
-  font-size: 18px;
 }
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #b2b2b2;
-}
-
-main {
-  height: auto;
-}
-h1 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
+  background-color: #dddddd;
 }
 
 footer {
@@ -56,39 +34,13 @@ footer {
   font-size: 14px;
 }
 
-.left li {
-  padding: 6px;
-  text-align: left;
-  text-decoration: none;
-  list-style: none;
-}
-
-.center {
-  margin-top: 40px;
-}
-
-.center li {
+.footerColumn li {
   padding: 6px;
   text-align: center;
   text-decoration: none;
   list-style: none;
-}
-
-.right {
-  margin-top: 20px;
-  padding: 4px;
-  text-align: right;
-  text-decoration: none;
-  list-style: none;
-}
-
-main {
-  padding-right: 200px;
-  padding-left: 200px;
-}
-
-body {
-  background-color: #f8f9fa;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .title-page {
@@ -102,22 +54,54 @@ body {
   font-size: 30px;
 }
 
+.main-component {
+  width: 40%;
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.main-component form {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: left;
+  border-radius: 8px;
+  border: #727171 2px solid;
+  padding: 25px;
+  background-color: #ffffff;
+}
+
+section input,
+textarea {
+  width: 85%;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #000;
+  background-color: #d8dadb;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
 .saveBtn {
   margin-top: 50px;
   background-color: #000000;
   color: #ffffff;
-  padding: 20px;
+  padding: 20px 100px 20px 100px;
   border-radius: 8px;
   margin-top: 50px;
   font-size: 16px;
   text-transform: uppercase;
   margin: 30px;
-}
-
-span {
-  display: block;
-  font-weight: bold;
-  font-size: 1.2em;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .container {
@@ -127,21 +111,17 @@ span {
   margin-bottom: 100px;
 }
 
-.container h1 {
-  font-size: 20px;
-}
-
 #steps {
+  text-align: center;
   width: 15%;
+  font-weight: bold;
 }
 
 #steps div {
+  text-align: left;
   display: flex;
   flex-direction: column;
-}
-
-#steps span {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 #steps .stepActive {
@@ -159,26 +139,6 @@ span {
   background-color: #ffffff;
 }
 
-#options {
-  width: 40%;
-  padding: 0px 30px 0px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#options form {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  text-align: left;
-  border-radius: 8px;
-  border: #727171 2px solid;
-  padding: 25px;
-  background-color: #ffffff;
-}
-
 #options .radio-option {
   cursor: pointer;
   border: none;
@@ -190,7 +150,7 @@ span {
   border-radius: 10px;
   font-size: 20px;
   padding: 0px 20px 0px 0px;
-  font-weight: bolder;
+  font-weight: bold;
   border: #000000 1px solid;
   display: flex;
   align-items: center;
@@ -217,35 +177,9 @@ span {
   background-color: #424242;
 }
 
-#personalData {
-  width: 60%;
-  padding: 0px 30px 0px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#personalData span {
-  font-size: 45px;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-
-#personalData label {
-  font-size: 20px;
-  text-align: left;
-}
-#personalData form {
-  text-align: left;
-  border-radius: 8px;
-  border: #727171 2px solid;
-}
-
 #personalData input {
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 100%;
+  margin-bottom: 20px;
+  width: 130%;
   font-size: 20px;
   padding: 10px;
   color: #000;
@@ -266,89 +200,9 @@ span {
   padding-bottom: 10px;
 }
 
-#personalDataForm .firstColumn {
-  display: flex;
-
-  flex-direction: column;
-  align-items: start;
-  padding: 20px 0px 20px 20px;
-}
-
-#personalDataForm .secondColumn {
+#personalDataForm .formColumn {
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 20px 10px 20px 0px;
 }
-
-#personalDataForm div {
-  padding: 10px;
-}
-
-#caseFacts {
-  width: 50%;
-  padding: 0px 30px 0px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#caseFacts form {
-  width: 90%;
-  text-align: left;
-  border-radius: 8px;
-  border: #727171 2px solid;
-  padding: 25px;
-  background-color: #ffffff;
-}
-
-#caseFacts label {
-  font-size: 215px;
-  text-align: left;
-  font-size: 25px;
-}
-
-#caseFacts input,
-textarea {
-  width: 85%;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 20px;
-  padding: 10px;
-  text-align: center;
-  color: #000;
-  background-color: #d8dadb;
-}
-
-#caseFacts label {
-  padding: 20px;
-}
-
-#caseFacts input[type="text"],
-#caseFacts input[type="date"],
-#caseFacts input[type="time"] {
-  width: 90%;
-  padding: 8px;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-#caseFacts textarea {
-  width: 90%;
-  padding: 8px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-#caseFacts textarea {
-  width: 90%;
-  padding: 8px;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-/* Oculta o botão de rádio padrão */
-
-
