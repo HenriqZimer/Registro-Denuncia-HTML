@@ -6,7 +6,7 @@ header {
 }
 
 .logo {
-  background-image: url("../assets/logo-superior.png");
+  background-image: url("./assets/logo-superior.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 35px;
