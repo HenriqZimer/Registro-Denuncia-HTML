@@ -3,13 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Descrição do seu site" />
-    <title>Denuncias</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
-    />
-
+    <link rel="shortcut icon" href="../assets/logo-superior.png" />
+    <title>REGISTRO DE OCORRÊNCIAS</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -44,11 +39,37 @@
           </div>
         </section>
 
-        <section id="options" class="main-component">
-          <section id="user-input-data">
-            <h2>Dados Enviados pelo Usuário</h2>
-            <div id="consolidatedDataDisplay"></div>
-          </section>
+        <section id="options" class="main-component final">
+          <h2>Dados do seu Relato</h2>
+          <div>
+            Opção Selecionada: <span id="display_selectedOption"></span>
+          </div>
+          <div>Data da Ocorrência: <span id="display_abuseDate"></span></div>
+          <div>Hora da Ocorrência: <span id="display_abuseTime"></span></div>
+          <div>
+            Local da Ocorrência: <span id="display_abuseLocation"></span>
+          </div>
+          <h2>Seus Dados Pessoais</h2>
+          <div>Nome: <span id="display_name"></span></div>
+          <div>CPF: <span id="display_cpf"></span></div>
+          <div>RG: <span id="display_rg"></span></div>
+          <div>Email: <span id="display_email"></span></div>
+          <div>Telefone: <span id="display_telefone"></span></div>
+          <div>Endereço: <span id="display_endereco"></span></div>
+          <div>Numero da Residência: <span id="display_numero"></span></div>
+          <div>Bairro: <span id="display_bairro"></span></div>
+          <div>Cidade: <span id="display_cidade"></span></div>
+          <div>Estado: <span id="display_estado"></span></div>
+          <h2>Dados do Relato de Terceiros</h2>
+          <div>Data da Ocorrência: <span id="display_data"></span></div>
+          <div>Hora da Ocorrência: <span id="display_hora"></span></div>
+          <div>Local da Ocorrência: <span id="display_local"></span></div>
+          <div>
+            Descrição da Ocorrência: <span id="display_descricao"></span>
+          </div>
+          <div style="margin-top: 50px; display: flex">
+            <a class="saveBtn2" href="./Inicio.html">Voltar ao Início</a>
+          </div>
         </section>
       </div>
     </main>
@@ -78,5 +99,5 @@
       </div>
     </footer>
   </body>
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </html>

@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// relato de terceiros
+// relato terceiros
 document.addEventListener('DOMContentLoaded', function () {
   const caseFactsForm = document.getElementById('caseFactsforms');
   const saveBtnCase = document.querySelector('.saveAndProceedCase');
@@ -223,11 +223,6 @@ document.addEventListener('DOMContentLoaded', function () {
         dataObject[key] = value;
       }
 
-      if (hasEmptyField) {
-        alert("Por favor, preencha todos os campos antes de continuar.");
-        return;
-      }
-
       localStorage.setItem('caseFacts', JSON.stringify(dataObject));
       window.location.href = saveBtnCase.getAttribute('href');
     });
@@ -235,12 +230,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  displayAllSavedData();
+  const userData = getConsolidatedData();
+
+  displayValuesInHTML(userData);
 });
 
-function displayAllSavedData() {
+function getConsolidatedData() {
   const dataKeys = ['selectedOption', 'animalData', 'carAccidentData', 'abuseData', 'theftData', 'personalData', 'caseFacts'];
-  const consolidatedDataElement = document.getElementById('consolidatedDataDisplay');
   let consolidatedData = {};
 
   dataKeys.forEach(key => {
@@ -255,42 +251,15 @@ function displayAllSavedData() {
     }
   });
 
-  for (const [key, value] of Object.entries(consolidatedData)) {
-    const dataDiv = document.createElement('div');
-    dataDiv.innerHTML = `consolidatedData.${key} = ${value}`;
-    consolidatedDataElement.appendChild(dataDiv);
-  }
+  return consolidatedData;
 }
 
-
-
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   displaySavedData('selectedOption', 'selectedOptionDisplay');
-//   displaySavedData('animalData', 'animalDataDisplay');
-//   displaySavedData('carAccidentData', 'carAccidentDataDisplay');
-//   displaySavedData('abuseData', 'abuseDataDisplay');
-//   displaySavedData('theftData', 'theftDataDisplay');
-//   displaySavedData('personalData', 'personalDataDisplay');
-//   displaySavedData('caseFacts', 'caseFactsDisplay');
-// });
-
-// function displaySavedData(localStorageKey, displayElementId) {
-//   const data = localStorage.getItem(localStorageKey);
-//   if (data) {
-//     const displayElement = document.getElementById(displayElementId);
-//     if (typeof data === 'string' && !data.startsWith('{')) {
-//       displayElement.textContent = data;
-//     } else {
-//       const parsedData = JSON.parse(data);
-//       const list = document.createElement('ul');
-//       for (const [key, value] of Object.entries(parsedData)) {
-//         const listItem = document.createElement('li');
-//         listItem.textContent = `${key}: ${value}`;
-//         list.appendChild(listItem);
-//       }
-//       displayElement.appendChild(list);
-//     }
-//   }
-// }
+function displayValuesInHTML(userData) {
+  for (const [key, value] of Object.entries(userData)) {
+    const element = document.getElementById(`display_${key}`);
+    if (element) {
+      element.textContent = value;
+    }
+  }
+}
+console.log('Displaying consolidated data: ', getConsolidatedData());
