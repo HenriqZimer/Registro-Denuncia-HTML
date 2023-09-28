@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../assets/logo-superior.png" />
+    <link rel="shortcut icon" href="./assets/logo-superior.ico" />
     <title>REGISTRO DE OCORRÊNCIAS</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -31,7 +31,7 @@
               <span>3 - Dados Pessoais</span>
             </div>
             <div class="step">
-              <span>4 - Dados do Fato</span>
+              <span>4 - Relato de Terceiros</span>
             </div>
             <div class="step">
               <span>5 - Finalização</span>
@@ -39,39 +39,55 @@
           </div>
         </section>
 
-        <section id="abuseData" class="main-component">
-          <h1>Detalhes do Abuso</h1>
+        <section id="animalData" class="main-component">
+          <h1>Dados do Animal</h1>
           <div>
-            <form id="abuseForm">
+            <form id="animalDataForm" class="form">
               <div style="padding: 10px">
-                <label for="abuseDate">Data do Abuso</label>
-                <input type="date" name="abuseDate" id="abuseDate" />
+                <label for="animalType">Tipo de Animal</label>
+                <input
+                  type="text"
+                  name="animalType"
+                  id="animalType"
+                  placeholder="Ex: Cachorro, Gato..."
+                />
               </div>
               <div style="padding: 10px">
-                <label for="abuseTime">Hora do Abuso</label>
-                <input type="time" name="abuseTime" id="abuseTime" />
+                <label for="animalColor">Cor</label>
+                <input
+                  type="text"
+                  name="animalColor"
+                  id="animalColor"
+                  placeholder="Ex: Marrom, Branco..."
+                />
               </div>
               <div style="padding: 10px">
-                <label for="abuseLocation">Local do Abuso</label>
-                <input type="text" name="abuseLocation" id="abuseLocation" />
+                <label for="animalSize">Tamanho</label>
+                <select name="animalSize" id="animalSize">
+                  <option value="pequeno">Pequeno</option>
+                  <option value="medio">Médio</option>
+                  <option value="grande">Grande</option>
+                </select>
               </div>
               <div style="padding: 10px">
-                <label for="abuseDescription">Descrição do Abuso</label>
+                <label for="animalDescription">Descrição Adicional</label>
                 <textarea
-                  name="abuseDescription"
-                  id="abuseDescription"
+                  name="animalDescription"
+                  id="animalDescription"
                   cols="30"
                   rows="10"
                 ></textarea>
               </div>
             </form>
+
             <div style="margin-top: 50px; display: flex;">
-              <a class="saveBtn" href="./Inicio.html">Voltar ao Início</a>
-              <a class="saveBtn saveAndProceedAbuse" href="./DadosPessoais.html"
+              <a class="saveBtn" href="./index.html">Voltar ao Início</a>
+              <a
+                class="saveBtn saveAndProceedAnimal"
+                href="./DadosPessoais.html"
                 >Próximo</a
               >
             </div>
-
           </div>
         </section>
       </div>
